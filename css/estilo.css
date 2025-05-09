@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+.no-subrayado {
+    text-decoration: none;
+}
+
+body {
+    font-family: Nunito, 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+    background: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: rgb(247, 210, 142);
+    color: black;
+    position: fixed;
+    justify-items: center;
+    justify-content: center;
+    width: 95.50%;
+    padding: 35px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding: 0.01px;
+    margin: 0 auto;
+    z-index: 1;
+    text-align: center;
+    border-bottom: 10px solid white;
+
+
+}
+
+div {
+    width: 100%;
+    height: 90vh;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    margin: 0.1rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    margin-top: 60px;
+    margin-bottom: 0px;
+    margin-left: -10px;
+}
+
+aside {
+    background-color: lightskyblue;
+    color: black;
+    width: 10%;
+    height: 100vh;
+    font-size: 10px;
+    z-index: 2;
+    position: fixed;
+    display: block;
+    margin-top: 35px;
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+}
+
+ul {
+    list-style: none;
+}
+
+aside>ul>li {
+    padding: 10px;
+    margin-left: -10%;
+}
+
+li:hover {
+    background: white;
+    color: black;
+    width: 63%;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.columna {
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    vertical-align: auto;
+    margin-top: 50px;
+}
+
+
+main {
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 36px;
+    margin-bottom: 20px;
+    align-content: center;
+
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    object-fit: cover;
+    gap: 16px;
+
+
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.tarjeta {
+    background-color: #fff;
+    border-top: 20px solid white;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
+}
+
+h1,
+img {
+    display: inline-block;
+}
